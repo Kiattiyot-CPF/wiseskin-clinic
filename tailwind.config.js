@@ -11,6 +11,7 @@ module.exports = {
         'shopee': '#FF6600',
         'lazada': '#000083',
         'line': '#00b639',
+        'facebook': '#1778f2',
       },
     },
   },

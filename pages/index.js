@@ -65,19 +65,19 @@ export default function Home() {
         <Image src="/img/review-02.jpg" width="800" height="1066" />
         <Image src="/img/doctor.jpg" width="800" height="800" />
         <div className="flex flex-col flex-wrap gap-2 w-full px-4 py-4">
-          <Link href="https://www.lazada.co.th/shop/debest-shop">
+          {/* <Link href="https://www.lazada.co.th/shop/debest-shop">
             <div className="flex pl-4 py-2 rounded-xl bg-lazada">
               <img className="w-52 object-contain " src="/img/lazada-01.png" />
             </div>
-          </Link>
-          <Link href="https://shopee.co.th/iounnherbs?smtt=0.0.9">
-            <div className="flex pl-4 py-2 rounded-xl bg-shopee">
+          </Link> */}
+          <Link href="https://shopee.co.th/vitavitae">
+            <div className="flex pl-4 py-4 rounded-xl bg-shopee">
               <img className="w-52 object-contain " src="/img/shopee-01.png" />
             </div>
           </Link>
-          <Link href="https://lin.ee/yB3s6hU">
-            <div className="flex pl-4 py-2 rounded-xl bg-line">
-              <img className="w-52 object-contain " src="/img/line-01.png" />
+          <Link href="https://www.facebook.com/VitaACThailand">
+            <div className="flex pl-4 py-4 rounded-xl bg-facebook align-middle items-center">
+              <img className="h-12 object-contain " src="/img/facebook.png" /> <span className=" text-3xl text-white font-bold ml-8">Facebook Page</span>
             </div>
           </Link>
         </div>
