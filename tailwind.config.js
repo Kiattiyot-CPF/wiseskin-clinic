@@ -6,7 +6,13 @@ module.exports = {
       'display': ['Prompt', 'sans-serif'],
       'body': ['Prompt', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'shopee': '#FF6600',
+        'lazada': '#000083',
+        'line': '#00b639',
+      },
+    },
   },
   variants: {
     extend: {},

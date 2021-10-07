@@ -1,13 +1,14 @@
 import Image from 'next/image'
+import Link from "next/link"
 
 import MainLayout from '../layout/main-layout'
 
 export default function Home() {
   return (
     <MainLayout>
-      <div className="flex flex-col  max-w-2xl">
+      <div className="flex flex-col max-w-2xl">
         <div>
-          <Image src="/img/ads01.jpg" width="800" height="800" />
+          <Image src="/img/cover.jpg" width="800" height="800" />
         </div>
         <div className="flex justify-center py-4">
           <span className=" text-4xl font-bold text-gray-800">
@@ -48,32 +49,37 @@ export default function Home() {
           </span>
         </div>
         <div>
-          <Image src="/img/ads-02.jpg" width="800" height="760" />
+          <Image src="/img/why-vita-ac.jpg" width="800" height="760" />
         </div>
         <div>
-          <button className="px-5 py-8 w-full text-white text-3xl bg-green-600">
-            @Line ปรึกษาคุณหมอ (รอภาพ)
-          </button>
+          <Image src="/img/web.gif" width="800" height="450" />
         </div>
         <div className="flex justify-center py-6">
           <span className=" text-4xl font-bold text-gray-800">
             ทำไมต้อง Vista AC?
           </span>
         </div>
-        <Image src="/img/ads-03.jpg" width="800" height="800" />
-        <Image src="/img/award-01.png" width="800" height="800" />
-        <Image src="/img/review-01.png" width="800" height="800" />
-        <Image src="/img/review-01.png" width="800" height="800" />
-        <div className="flex flex-col gap-2 pb-8 px-4">
-          <button className="px-5 py-5 bg-green-600 text-2xl font-bold text-white rounded-md">
-            @LINE
-          </button>
-          <button className="px-5 py-5 bg-yellow-500 text-2xl font-bold text-white rounded-md">
-            Shopee
-          </button>
-          <button className="px-5 py-5 bg-indigo-800 text-2xl font-bold text-white rounded-md">
-            Lazada
-          </button>
+        <Image src="/img/features.jpg" width="800" height="800" />
+        <Image src="/img/guarantee.jpg" width="800" height="800" />
+        <Image src="/img/review-01.jpg" width="800" height="800" />
+        <Image src="/img/review-02.jpg" width="800" height="1066" />
+        <Image src="/img/doctor.jpg" width="800" height="800" />
+        <div className="flex flex-col flex-wrap gap-2 w-full px-4 py-4">
+          <Link href="https://www.lazada.co.th/shop/debest-shop">
+            <div className="flex pl-4 py-2 rounded-xl bg-lazada">
+              <img className="w-52 object-contain " src="/img/lazada-01.png" />
+            </div>
+          </Link>
+          <Link href="https://shopee.co.th/iounnherbs?smtt=0.0.9">
+            <div className="flex pl-4 py-2 rounded-xl bg-shopee">
+              <img className="w-52 object-contain " src="/img/shopee-01.png" />
+            </div>
+          </Link>
+          <Link href="https://lin.ee/yB3s6hU">
+            <div className="flex pl-4 py-2 rounded-xl bg-line">
+              <img className="w-52 object-contain " src="/img/line-01.png" />
+            </div>
+          </Link>
         </div>
       </div>
     </MainLayout>)
